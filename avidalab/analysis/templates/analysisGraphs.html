@@ -9,10 +9,11 @@
 
 <body>
     We made it here yay! </br>
-
-    <img src={% static 'graphs/scatter_plot.png' %}> </br>
-    <img src={% static 'graphs/histogram.png' %}> </br>
-    <img src={% static 'graphs/line_graph.png' %}> </br>
-    <img src={% static 'graphs/box_and_whisker_plot.png' %}> </br>
+	{% load static %}
+    <img src='/media/graphs/scatter_plot.png'> </br>
+    <img src='/media/graphs/histogram.png'> </br>
+    <img src='/media/graphs/line_graph.png'> </br>
+    <img src='/media/graphs/box_and_whisker_plot.png'> </br>
+    
 </body>
 {% endblock %}

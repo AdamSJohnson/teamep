@@ -56,9 +56,10 @@ def unpack_zip(zipfile='', path_from_local='', remove=False):
     parent_archive.close()
     for name in namelist:
         try:
-            unpack_zip(zipfile=name.split('/')[1], path_from_local=filepath.strip('.zip') + '\\', remove=True)
+            unpack_zip(zipfile=name.split('/')[1], path_from_local=filepath.strip('.zip') + '/', remove=True)
 
         except:
+            print('failed')
             continue
 
     if remove:

@@ -13,11 +13,12 @@ import re
 
 #For creating the /static/graphs/ directory to save the images files
 import os
+from django.conf import settings
+
 
 #Grab the directory name analysis and then create the the static/graphs/ directory under it
 #for the images to be saved in
-script_dir = os.path.dirname(__file__)
-results_dir = os.path.join(script_dir, 'static/graphs/')
+results_dir = os.path.join(settings.BASE_DIR, 'media/graphs/')
 if not os.path.isdir(results_dir):
     os.makedirs(results_dir)
 

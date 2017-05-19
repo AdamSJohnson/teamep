@@ -18,7 +18,11 @@ import django
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.10/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
+STATIC_URL = '/static/'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
@@ -31,9 +35,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'testserver',
     'localhost',
-]
-STATICFILES_DIRS = [
-    'avidalab/analysis/static/graphs'
+    'adamjohnson198.pythonanywhere.com'
 ]
 
 # Application definition
@@ -140,10 +142,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.10/howto/static-files/
-
-STATIC_URL = '/static/'
 django.setup()
 
 #Using Django's email backend
