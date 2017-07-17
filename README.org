@@ -1,3 +1,6 @@
-Adam Was here
-Vlad is/was here time is all happeneing at the same time
-Jim was here #sideBar
+This implementation of AvidaLab allows for the following:
+
+Uploading of tar.gz files to a database.
+Unzipping of the uploaded files.
+Simple analysis of a selected collection of data.
+Graphs of the data.
